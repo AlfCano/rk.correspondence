@@ -1,0 +1,53 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Multiple CA
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<caption id="tab_DatVrbls" />
+		<setting id="mca_data">
+		</setting>
+		<setting id="mca_vars">
+		</setting>
+		<caption id="frm_spnbxlbD52" />
+		<setting id="mca_ncp">
+		</setting>
+		<caption id="tab_PltOptns" />
+		<caption id="frm_spXD11YD22" />
+		<setting id="mca_dim_x">
+		</setting>
+		<setting id="mca_dim_y">
+		</setting>
+		<setting id="mca_plot_type">
+		</setting>
+		<setting id="mca_repel">
+		</setting>
+		<caption id="tab_Output" />
+		<setting id="mca_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

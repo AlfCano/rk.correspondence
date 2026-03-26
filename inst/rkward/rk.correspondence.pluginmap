@@ -1,0 +1,97 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="SimpleCA"
+	id="SimpleCA_rkward"
+	po_id="SimpleCA_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.correspondence"
+		shortinfo="RKWard Plugin for Correspondence Analysis (CA &amp; MCA) using FactoMineR and factoextra."
+		longinfo="RKWard Plugin for Correspondence Analysis (CA &amp; MCA) using FactoMineR and factoextra."
+		version="0.0.1"
+		releasedate="2026-03-25"
+		url="https://github.com/AlfCano/rk.correspondence"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano Robles"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_SimpleCAMultipleCA"
+			label="Multiple CA"
+			type="standard"
+			file="plugins/MultipleCA.xml"
+		>
+		</component>
+		<component
+			id="cmp_SimpleCASimpleCA"
+			label="Simple CA"
+			type="standard"
+			file="plugins/SimpleCA.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="Multivariate"
+				label="Multivariate"
+			>
+				<entry
+					component="cmp_SimpleCAMultipleCA"
+				/>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="Multivariate"
+				label="Multivariate"
+			>
+				<entry
+					component="cmp_SimpleCASimpleCA"
+				/>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

@@ -1,0 +1,17 @@
+Package: rk.correspondence
+Type: Package
+Title: RKWard Plugin for Correspondence Analysis (CA & MCA) using
+        FactoMineR and factoextra.
+Version: 0.0.1
+Date: 2026-03-25
+Author: Alfonso Cano Robles
+Maintainer: Alfonso Cano Robles <alfonso.cano@correo.buap.mx>
+Enhances: rkward
+Description: RKWard Plugin for Correspondence Analysis (CA & MCA) using
+        FactoMineR and factoextra.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.correspondence
+Authors@R: person(given="Alfonso", family="Cano Robles",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))

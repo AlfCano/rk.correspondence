@@ -1,0 +1,59 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Simple CA
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<caption id="tab_Data" />
+		<setting id="ca_data">
+		</setting>
+		<caption id="frm_MdlSttng" />
+		<setting id="ca_ncp">
+		</setting>
+		<caption id="tab_PltOptns" />
+		<caption id="frm_Dmnsnstp" />
+		<setting id="ca_dim_x">
+		</setting>
+		<setting id="ca_dim_y">
+		</setting>
+		<caption id="frm_Filterng" />
+		<setting id="ca_filter_type">
+		</setting>
+		<setting id="ca_filter_val">
+		</setting>
+		<caption id="frm_Aesthtcs" />
+		<setting id="ca_repel">
+		</setting>
+		<setting id="ca_col_row">
+		</setting>
+		<setting id="ca_col_col">
+		</setting>
+		<caption id="tab_Output" />
+		<setting id="ca_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

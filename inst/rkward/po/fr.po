@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Simple Correspondence Analysis"
+msgstr "Analyse des Correspondances Simple (AFC)"
+
+msgid "Multiple Correspondence Analysis"
+msgstr "Analyse des Correspondances Multiples (ACM)"
+
+msgid "Contingency Table or Data Frame"
+msgstr "Tableau de Contingence ou Data Frame"
+
+msgid "Number of dimensions to retain (ncp)"
+msgstr "Nombre de dimensions à conserver (ncp)"
+
+msgid "X-axis Dimension"
+msgstr "Dimension de l'axe X"
+
+msgid "Y-axis Dimension"
+msgstr "Dimension de l'axe Y"
+
+msgid "Filter points in plot by"
+msgstr "Filtrer les points du graphique par"
+
+msgid "Show all points (None)"
+msgstr "Afficher tous les points (Aucun)"
+
+msgid "Top Contributors (Number)"
+msgstr "Meilleurs Contributeurs (Nombre)"
+
+msgid "Quality of representation (cos2)"
+msgstr "Qualité de représentation (cos2)"
+
+msgid "Avoid text overlapping (repel)"
+msgstr "Éviter le chevauchement du texte (repel)"
+
+msgid "Data"
+msgstr "Données"
+
+msgid "Plot Options"
+msgstr "Options de Graphique"
+
+msgid "Output"
+msgstr "Sortie"
+
+msgid "Active Categorical Variables"
+msgstr "Variables Catégorielles Actives"
+
+msgid "Plot Type"
+msgstr "Type de Graphique"
+
+msgid "Biplot (Variables & Individuals)"
+msgstr "Biplot (Variables & Individus)"
+
+msgid "Variables only"
+msgstr "Variables uniquement"
+
+msgid "Individuals only"
+msgstr "Individus uniquement"

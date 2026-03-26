@@ -1,0 +1,63 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="SimpleCA.js" />
+	<help file="SimpleCA.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Simple Correspondence Analysis">
+		<tabbook>
+			<tab label="Data" id="tab_Data">
+				<row id="row_vCTDFMSMSN">
+					<varselector id="ca_selector" />
+					<column id="clm_vCTDFMSMSN">
+						<varslot id="ca_data" label="Contingency Table or Data Frame" source="ca_selector" required="true" />
+						<frame label="Model Settings" id="frm_MdlSttng">
+							<spinbox label="Number of dimensions to retain (ncp)" id="ca_ncp" initial="5" min="2" />
+						</frame>
+					</column>
+				</row>
+			</tab>
+			<tab label="Plot Options" id="tab_PltOptns">
+				<column id="clm_fDDXD11YD2">
+					<frame label="Dimensions to plot" id="frm_Dmnsnstp">
+						<spinbox label="X-axis Dimension" id="ca_dim_x" initial="1" min="1" />
+						<spinbox label="Y-axis Dimension" id="ca_dim_y" initial="2" min="2" />
+					</frame>
+					<frame label="Filtering" id="frm_Filterng">
+						<dropdown id="ca_filter_type" label="Filter points in plot by">
+							<option label="Show all points (None)" value="none" checked="true" />
+							<option label="Top Contributors (Number)" value="contrib" />
+							<option label="Quality of representation (cos2)" value="cos2" />
+						</dropdown>
+						<spinbox label="Filter threshold (e.g. 5 for contrib, 0.5 for cos2)" id="ca_filter_val" initial="5" min="0" />
+					</frame>
+					<frame label="Aesthetics" id="frm_Aesthtcs">
+						<checkbox id="ca_repel" label="Avoid text overlapping (repel)" value="TRUE" checked="true" />
+						<input label="Row color" id="ca_col_row" initial="blue" />
+						<input label="Column color" id="ca_col_col" initial="red" />
+					</frame>
+				</column>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<column id="clm_svbSCAROPP">
+					<saveobject label="Save CA Result Object" checkable="true" checked="true" initial="resultado_ca" id="ca_save" />
+					<preview label="Preview" id="prv_Preview" />
+				</column>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>

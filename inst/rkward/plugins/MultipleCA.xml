@@ -1,0 +1,57 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="MultipleCA.js" />
+	<help file="MultipleCA.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Multiple Correspondence Analysis">
+		<tabbook>
+			<tab label="Data &amp; Variables" id="tab_DatVrbls">
+				<row id="row_vDACVD52D5">
+					<varselector id="mca_selector" />
+					<column id="clm_vDACVD52D5">
+						<varslot id="mca_data" label="Dataset" source="mca_selector" required="true" />
+						<varslot id="mca_vars" label="Active Categorical Variables" source="mca_selector" required="true" multi="true" />
+						<frame id="frm_spnbxlbD52">
+							<spinbox label="Dimensions to retain (ncp)" id="mca_ncp" initial="5" min="2" />
+						</frame>
+					</column>
+				</row>
+			</tab>
+			<tab label="Plot Options" id="tab_PltOptns">
+				<column id="clm_fXD11YD22X">
+					<frame id="frm_spXD11YD22">
+						<spinbox label="X-axis Dim" id="mca_dim_x" initial="1" min="1" />
+						<spinbox label="Y-axis Dim" id="mca_dim_y" initial="2" min="2" />
+					</frame>
+					<dropdown id="mca_plot_type" label="Plot Type">
+						<option label="Biplot (Variables &amp; Individuals)" value="biplot" checked="true" />
+						<option label="Variables only" value="var" />
+						<option label="Individuals only" value="ind" />
+					</dropdown>
+					<checkbox id="mca_repel" label="Avoid text overlapping (repel)" value="TRUE" checked="true" />
+				</column>
+			</tab>
+			<tab label="Output" id="tab_Output">
+				<column id="clm_svSMCAROPP">
+					<saveobject label="Save MCA Result Object" checkable="true" checked="true" initial="resultado_mca" id="mca_save" />
+					<preview label="Preview" id="prv_Preview" />
+				</column>
+			</tab>
+		</tabbook>
+	</dialog>
+</document>
